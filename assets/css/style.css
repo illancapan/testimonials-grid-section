@@ -33,6 +33,7 @@ html {
 
 body {
   font-family: var(--font-family-barlow);
+  background-color: var(--light-grayish-blue);
   display: flex;
   flex-flow: column;
   justify-content: center;
@@ -40,59 +41,93 @@ body {
 }
 .card {
   width: 1110px;
-  height: 575px;
-  background-color: black;
+  height: auto;
+  margin: 0 0 10px 0;
+  font-size: 13px;
 }
 .section__left {
-  width: 825px;
+  width: 75%;
+  height: auto;
   float: left;
   display: flex;
   flex-flow: row;
-  justify-content: space-between;
   flex-wrap: wrap;
-  align-items: center;
+  justify-content: space-between;
 }
 .section__right {
-  width: 255px;
-  height: 575px;
-  float: right;
+  width: 25%;
+  display: flex;
+  float: left;
 }
-.article__daniel {
-  width: 540px;
-  height: 280px;
+.article {
+  padding: 25px;
+  margin: 10px;
+  border-radius: 10px;
 }
-.article__jonathan {
-  width: 255px;
-  height: 280px;
+.article__daniel,
+.article__patrick {
+  width: 65%;
+  height: auto;
+  background-color: var(--moderate-violet);
+}
+.article__jonathan,
+.article__jeanette {
+  width: 28%;
+  height: auto;
+  background-color: var(--very-dark-grayish-blue);
+}
+
+.article__patrick {
+  background-color: var(--very-dark-blackish-blue);
 }
 .article__jeanette {
-  width: 255px;
-  height: 280px;
-}
-.article__patrick {
-  width: 540px;
-  height: 280px;
+  color: var(--very-dark-grayish-blue);
+  background-color: var(--white);
 }
 .article__kira {
+  width: 95%;
+  height: 100%;
+  color: var(--very-dark-grayish-blue);
+  background-color: var(--white);
 }
 .article__img {
-  width: 30px;
+  width: 40px;
+  height: auto;
+  border: 2px solid var(--white);
+  border-radius: 100%;
 }
-.article__daniel--title {
+.title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 25px;
 }
-.tittle {
+.title__tagline {
+  margin: 0 0 0 15px;
+  display: flex;
+  flex-direction: column;
 }
-.daniel__title--tagline {
+.bold {
+  font-size: 22px;
+  font-weight: var(--weights-barlow-600);
+  margin-bottom: 20px;
 }
-.tagline {
-}
-.article__daniel--bold {
-}
-.blod {
-}
-.article__daniel--paragraph {
-}
+/* .article__daniel--title {
+} */
+/* .daniel__title--tagline { */
+/* } */
+/* .tagline { */
+/* } */
+/* .article__daniel--bold {
+} */
+/* .article__daniel--paragraph {
+} */
 .paragraph {
+  font-size: 13px;
+  font-weight: var(--weights-barlow-500);
+}
+.footer {
+  color: black;
 }
 .attribution {
   font-size: 11px;
