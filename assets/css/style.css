@@ -1,0 +1,103 @@
+/* - Mobile: 375px
+- Desktop: 1440px */
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap");
+
+:root {
+  /* ## Colors
+
+    ### Primary */
+  --moderate-violet: hsl(263, 55%, 52%);
+  --very-dark-grayish-blue: hsl(217, 19%, 35%);
+  --very-dark-blackish-blue: hsl(219, 29%, 14%);
+  --white: hsl(0, 0%, 100%);
+
+  /* ### Neutral */
+
+  --light-gray: hsl(0, 0%, 81%);
+  --light-grayish-blue: hsl(210, 46%, 95%);
+
+  /* ## Typography
+
+### Body Copy */
+
+  /* - Font size: 13px */
+
+  /* ### Font */
+  --font-family-barlow: "Barlow Semi Condensed", sans-serif;
+  --weights-barlow-500: 500;
+  --weights-barlow-600: 600;
+}
+html {
+  font-size: 100%;
+}
+
+body {
+  font-family: var(--font-family-barlow);
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  width: 1110px;
+  height: 575px;
+  background-color: black;
+}
+.section__left {
+  width: 825px;
+  float: left;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.section__right {
+  width: 255px;
+  height: 575px;
+  float: right;
+}
+.article__daniel {
+  width: 540px;
+  height: 280px;
+}
+.article__jonathan {
+  width: 255px;
+  height: 280px;
+}
+.article__jeanette {
+  width: 255px;
+  height: 280px;
+}
+.article__patrick {
+  width: 540px;
+  height: 280px;
+}
+.article__kira {
+}
+.article__img {
+  width: 30px;
+}
+.article__daniel--title {
+}
+.tittle {
+}
+.daniel__title--tagline {
+}
+.tagline {
+}
+.article__daniel--bold {
+}
+.blod {
+}
+.article__daniel--paragraph {
+}
+.paragraph {
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
